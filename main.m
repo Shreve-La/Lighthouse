@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
         char inputChars[255];
         printf("input a string: ");
         fgets(inputChars, 255, stdin);
-        strtok(inputChars, "\n");
+        strtok(inputChars, "\n"); // strip '/n' form end of c string.
         NSString *inputString = [NSString stringWithUTF8String:inputChars];
         
         int value = 0;
